@@ -188,6 +188,24 @@ async function startServer() {
     await mongoose.connect(mongoUri);
     dbConnected = true;
     console.log('✅ Connected to MongoDB successfully');
+
+    // ── Auto-seed admin user (if not exists) ──
+    try {
+      const Admin = require('./models/Admin');
+      const existingAdmin = await Admin.findOne({ email: 'ishukriitpatna@gmail.com' });
+      if (!existingAdmin) {
+        const admin = new Admin({
+          email: 'ishukriitpatna@gmail.com',
+          password: 'ISHUkr75@',
+          name: 'GULLYESPORTS Admin',
+          role: 'superadmin',
+        });
+        await admin.save();
+        console.log('🎉 Admin user auto-seeded successfully');
+      }
+    } catch (seedErr) {
+      console.warn('⚠️ Admin seed skipped:', seedErr.message);
+    }
   } catch (err) {
     console.error('🔴 Failed to connect to MongoDB:', err.message);
     console.warn('⚠️ Server will start without database — DB features will fail.');
