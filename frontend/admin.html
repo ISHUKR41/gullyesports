@@ -908,6 +908,11 @@
      * ========================================================================
      */
 
+    // ── API Base URL (auto-detect environment) ────────────────
+    const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
+      ? ''  // localhost: Vite proxy handles /api → localhost:5000
+      : 'https://gullyesports-backend.onrender.com';  // Production: direct to Render
+
     // ── State ────────────────────────────────────────────────
     let authToken = localStorage.getItem('ge_admin_token');
     let currentContactFilter = 'all';
@@ -919,7 +924,7 @@
       const headers = { 'Content-Type': 'application/json' };
       if (authToken) headers['Authorization'] = `Bearer ${authToken}`;
 
-      const response = await fetch(`/api/v1/admin${endpoint}`, {
+      const response = await fetch(`${API_BASE}/api/v1/admin${endpoint}`, {
         ...options,
         headers: { ...headers, ...options.headers },
       });
@@ -954,7 +959,7 @@
       errorEl.style.display = 'none';
 
       try {
-        const result = await fetch('/api/v1/admin/login', {
+        const result = await fetch(`${API_BASE}/api/v1/admin/login`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
