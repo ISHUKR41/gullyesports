@@ -64,9 +64,23 @@ const PORT = process.env.PORT || 5000;
 app.use(helmet());
 
 // --- CORS (Cross-Origin Resource Sharing) ---
-// Allows frontend (localhost:5173) to talk to backend (localhost:5000)
+// Allows frontend to talk to backend from both localhost (dev) and Vercel (production)
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3000',
+  'https://gullyesports.vercel.app',
+  process.env.CORS_ORIGIN,
+].filter(Boolean);
+
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:5173',
+  origin: function (origin, callback) {
+    // Allow requests with no origin (mobile apps, Postman, server-to-server)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    return callback(new Error('Not allowed by CORS'));
+  },
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
