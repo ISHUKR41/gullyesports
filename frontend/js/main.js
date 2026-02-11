@@ -283,6 +283,13 @@ function clearAllErrors(form) {
  *   const result = await apiRequest('/api/v1/contact', 'POST', { name: 'John' });
  */
 async function apiRequest(url, method = 'POST', data = null) {
+  // Determine the base URL based on environment
+  const baseUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+    ? 'http://localhost:5000'
+    : ''; // For production, use relative path which will go through Vercel rewrites
+  
+  const fullUrl = url.startsWith('/') ? baseUrl + url : url;
+
   const options = {
     method,
     headers: {},
@@ -297,7 +304,7 @@ async function apiRequest(url, method = 'POST', data = null) {
   }
 
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(fullUrl, options);
     const result = await response.json();
     return result;
   } catch (error) {
