@@ -286,7 +286,7 @@ async function apiRequest(url, method = 'POST', data = null) {
   // Determine the base URL based on environment
   const baseUrl = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
     ? 'http://localhost:5000'
-    : ''; // For production, use relative path which will go through Vercel rewrites
+    : 'https://gullyesports-backend.onrender.com'; // Production: Render backend
   
   const fullUrl = url.startsWith('/') ? baseUrl + url : url;
 
