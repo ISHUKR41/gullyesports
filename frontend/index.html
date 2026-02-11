@@ -1,0 +1,431 @@
+<!--
+  ============================================================================
+  GULLYESPORTS - Homepage (v2.0 — Premium Edition)
+  ============================================================================
+  Purpose: Main landing page for GULLYESPORTS platform.
+  
+  Sections:
+    1. Scroll Progress Bar (auto-created by main.js)
+    2. Navbar (sticky, glassmorphism on scroll)
+    3. Hero Section (particle canvas + typed text + animated counters)
+    4. Supported Games section (3 game cards with hover effects)
+    5. Weekly Tournaments (info + trust badges)
+    6. Why GULLYESPORTS (feature cards)
+    7. FAQ Accordion
+    8. CTA Section
+    9. Footer (SVG social icons)
+  
+  New Features:
+    - Animated particle canvas in hero background
+    - Typewriter text effect cycling through taglines
+    - Animated stat counters (count from 0 to target)
+    - Trust badges showing platform credibility
+    - Interactive FAQ accordion
+    - Scroll progress bar at page top
+    - SVG social icons (replace emoji)
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GULLYESPORTS — India's Premier Mobile Esports Tournament Platform</title>
+  <meta name="description" content="Join weekly PUBG, Free Fire & Call of Duty Mobile tournaments. Entry from ₹5, win up to ₹500 + ₹10 per kill. Fair play, instant UPI payouts. India's most trusted esports platform." />
+  <meta name="keywords" content="esports, PUBG tournament, Free Fire tournament, BGMI tournament, Call of Duty Mobile, Indian gaming, mobile esports, online tournament" />
+  <meta property="og:title" content="GULLYESPORTS — India's Premier Mobile Esports Platform" />
+  <meta property="og:description" content="Weekly tournaments for PUBG, Free Fire & COD Mobile. Entry from ₹5, win up to ₹500." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/css/design-system.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/pages.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        GULLY<span class="brand-accent">ESPORTS</span>
+      </a>
+      <div class="navbar-menu" id="navMenu">
+        <a href="/" class="nav-link active">Home</a>
+        <a href="/pubg.html" class="nav-link">PUBG</a>
+        <a href="/freefire.html" class="nav-link">Free Fire</a>
+        <a href="/cod.html" class="nav-link">Call of Duty</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <div class="nav-cta"><a href="/pubg.html#solo" class="btn btn-primary btn-sm">Join Tournament</a></div>
+      </div>
+      <button class="navbar-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg, #0f0c29 0%, #1a1a3e 40%, #24243e 100%);"></div>
+    </div>
+    <!-- Animated particle canvas overlay -->
+    <canvas class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll">
+        🏆 India's Next-Gen Esports Platform
+      </div>
+      <h1 class="hero-title animate-on-scroll stagger-1">
+        <span class="typed-text" data-phrases='["Compete. Dominate. Win.", "Play. Earn. Repeat.", "Skill Meets Reward.", "Your Arena Awaits."]'>Compete. Dominate. Win.</span><span class="typed-cursor"></span>
+      </h1>
+      <p class="hero-subtitle animate-on-scroll stagger-2">
+        Weekly tournaments for PUBG, Free Fire &amp; COD Mobile. 
+        Entry starts at just ₹5. Win up to ₹500 + ₹10 per kill. 
+        Real matches. Real prizes. Real fair play.
+      </p>
+      <div class="hero-actions animate-on-scroll stagger-3">
+        <a href="/pubg.html#solo" class="btn btn-primary btn-lg">🎯 Browse Tournaments</a>
+        <a href="/contact.html" class="btn btn-secondary btn-lg">📞 Contact Us</a>
+      </div>
+
+      <!-- Animated Stat Counters -->
+      <div class="hero-stats animate-on-scroll stagger-4">
+        <div class="hero-stat">
+          <div class="hero-stat-value">
+            <span class="counter-value" data-count="500" data-suffix="+">0</span>
+          </div>
+          <div class="hero-stat-label">Players Joined</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">
+            <span class="counter-value" data-count="50" data-suffix="+">0</span>
+          </div>
+          <div class="hero-stat-label">Tournaments Hosted</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">
+            <span class="counter-value" data-count="25000" data-prefix="₹" data-suffix="+">0</span>
+          </div>
+          <div class="hero-stat-label">Prizes Distributed</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value">
+            <span class="counter-value" data-count="3">0</span>
+          </div>
+          <div class="hero-stat-label">Games Supported</div>
+        </div>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="trust-grid animate-on-scroll stagger-5">
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🛡️</span> Fair Play Guaranteed
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">⚡</span> 24hr UPI Payouts
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">📱</span> Mobile Only
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge-icon">🏆</span> Weekly Events
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ SUPPORTED GAMES ═══════════════════ -->
+  <section class="section" id="games">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-label">Supported Games</span>
+        <h2 class="section-title">Choose Your <span class="gradient-text">Battleground</span></h2>
+        <p class="section-subtitle">Three of India's most popular mobile games. Weekly tournaments with real cash prizes.</p>
+      </div>
+      <div class="grid-3" style="margin-top:var(--space-10);">
+
+        <!-- PUBG Card -->
+        <a href="/pubg.html" class="game-card gradient-border animate-on-scroll stagger-1" style="text-decoration:none;">
+          <div class="game-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #1b2838, #2a475e);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:64px;">🎯</span>
+            </div>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-card-title">PUBG (BGMI)</h3>
+            <p class="game-card-desc">Battle Royale at its finest. Survive, loot, and dominate the battlegrounds.</p>
+            <div class="game-card-meta">
+              <span>🎮 Solo / Duo / Squad</span>
+              <span>💰 From ₹5</span>
+            </div>
+            <span class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">View Tournaments →</span>
+          </div>
+        </a>
+
+        <!-- Free Fire Card -->
+        <a href="/freefire.html" class="game-card gradient-border animate-on-scroll stagger-2" style="text-decoration:none;">
+          <div class="game-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #2a1a0d, #5c3d2e);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:64px;">🔥</span>
+            </div>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-card-title">Free Fire</h3>
+            <p class="game-card-desc">Fast-paced Battle Royale. Quick matches, instant thrills, real rewards.</p>
+            <div class="game-card-meta">
+              <span>🎮 Solo / Duo / Squad</span>
+              <span>💰 From ₹5</span>
+            </div>
+            <span class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">View Tournaments →</span>
+          </div>
+        </a>
+
+        <!-- COD Card -->
+        <a href="/cod.html" class="game-card gradient-border animate-on-scroll stagger-3" style="text-decoration:none;">
+          <div class="game-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #1a1a0d, #3d3d1a);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:64px;">⚔️</span>
+            </div>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-card-title">Call of Duty Mobile</h3>
+            <p class="game-card-desc">Tactical warfare meets mobile gaming. Precision gameplay, maximum thrill.</p>
+            <div class="game-card-meta">
+              <span>🎮 Solo / Duo / Squad</span>
+              <span>💰 From ₹5</span>
+            </div>
+            <span class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">View Tournaments →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ WEEKLY TOURNAMENTS ═══════════════════ -->
+  <section class="section-alt" id="tournaments">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Weekly Tournaments, <span class="gradient-text">Real Prizes</span></h2>
+        <p class="section-subtitle">Simple, transparent, and fair. Every week, across all three games.</p>
+      </div>
+
+      <div class="grid-3" style="margin-top:var(--space-10);">
+        <div class="card animate-on-scroll stagger-1" style="text-align:center;">
+          <div style="font-size:40px;margin-bottom:var(--space-4);">📋</div>
+          <h4>1. Register</h4>
+          <p style="color:var(--text-tertiary);font-size:var(--text-sm);margin:var(--space-3) 0 0;">Pick your game &amp; mode. Pay the entry fee (₹5–₹20) via UPI. Fill in your in-game details.</p>
+        </div>
+        <div class="card animate-on-scroll stagger-2" style="text-align:center;">
+          <div style="font-size:40px;margin-bottom:var(--space-4);">🎮</div>
+          <h4>2. Play</h4>
+          <p style="color:var(--text-tertiary);font-size:var(--text-sm);margin:var(--space-3) 0 0;">Join the custom room at the scheduled time. Play fair on your real mobile device. Give it your best.</p>
+        </div>
+        <div class="card animate-on-scroll stagger-3" style="text-align:center;">
+          <div style="font-size:40px;margin-bottom:var(--space-4);">💰</div>
+          <h4>3. Win</h4>
+          <p style="color:var(--text-tertiary);font-size:var(--text-sm);margin:var(--space-3) 0 0;">Winners get ₹500, runner-ups ₹250, plus ₹10/kill. Prizes sent via UPI within 24–48 hours.</p>
+        </div>
+      </div>
+
+      <!-- Prize Breakdown -->
+      <div class="card animate-on-scroll stagger-4" style="margin-top:var(--space-10);max-width:700px;margin-left:auto;margin-right:auto;">
+        <h3 style="text-align:center;margin-bottom:var(--space-6);">💰 Prize Structure <span class="gradient-text">(All Games)</span></h3>
+        <table class="prize-table">
+          <thead>
+            <tr><th>Mode</th><th>Entry Fee</th><th>🥇 Winner</th><th>🥈 Runner-Up</th><th>💀 Per Kill</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Solo</td>
+              <td><strong style="color:var(--accent-primary);">₹5</strong></td>
+              <td class="prize-amount">₹500</td>
+              <td class="prize-amount">₹250</td>
+              <td class="prize-amount">₹10</td>
+            </tr>
+            <tr>
+              <td>Duo</td>
+              <td><strong style="color:var(--accent-primary);">₹10</strong> <small style="color:var(--text-tertiary);">(₹5/player)</small></td>
+              <td class="prize-amount">₹500</td>
+              <td class="prize-amount">₹250</td>
+              <td class="prize-amount">₹10</td>
+            </tr>
+            <tr>
+              <td>Squad</td>
+              <td><strong style="color:var(--accent-primary);">₹20</strong> <small style="color:var(--text-tertiary);">(₹5/player)</small></td>
+              <td class="prize-amount">₹500</td>
+              <td class="prize-amount">₹250</td>
+              <td class="prize-amount">₹10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ WHY GULLYESPORTS ═══════════════════ -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-label">Why Us</span>
+        <h2 class="section-title">Why <span class="gradient-text">GULLYESPORTS</span>?</h2>
+        <p class="section-subtitle">Built by gamers, for gamers. We're not just another tournament platform.</p>
+      </div>
+      <div class="grid-4" style="margin-top:var(--space-10);">
+        <div class="card feature-card animate-on-scroll stagger-1">
+          <div class="feature-icon">🛡️</div>
+          <h4>Fair Play First</h4>
+          <p>Official in-game stats verification. No cheating, no hacking. Screen recordings may be requested. Violations = permanent ban.</p>
+        </div>
+        <div class="card feature-card animate-on-scroll stagger-2">
+          <div class="feature-icon">⚡</div>
+          <h4>Instant Payouts</h4>
+          <p>Prize money sent within 24–48 hours via UPI, Paytm, PhonePe, or GPay. No delays, no excuses.</p>
+        </div>
+        <div class="card feature-card animate-on-scroll stagger-3">
+          <div class="feature-icon">📱</div>
+          <h4>Mobile Only</h4>
+          <p>Level playing field. Real mobile devices only — no emulators (Gameloop, BlueStacks, etc.) allowed. Ever.</p>
+        </div>
+        <div class="card feature-card animate-on-scroll stagger-4">
+          <div class="feature-icon">💬</div>
+          <h4>Active Support</h4>
+          <p>Questions? Contact us anytime. We respond within 12–24 hours. Tournament support, payment issues — we've got you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FAQ ACCORDION ═══════════════════ -->
+  <section class="section-alt" id="faq">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">Frequently <span class="gradient-text">Asked Questions</span></h2>
+      </div>
+
+      <div style="max-width:800px;margin:var(--space-10) auto 0;">
+        <div class="accordion-item animate-on-scroll stagger-1">
+          <div class="accordion-header">
+            <h4>💬 How do I register for a tournament?</h4>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-body">
+            <p>Go to the game page (PUBG, Free Fire, or COD), select your mode (Solo/Duo/Squad), and click "Register." Fill in your in-game details, pay the entry fee via UPI, enter the transaction ID, and you're in! You'll receive match details before the tournament.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item animate-on-scroll stagger-2">
+          <div class="accordion-header">
+            <h4>💰 How are prizes distributed?</h4>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-body">
+            <p>Winner gets ₹500, Runner-up gets ₹250, and every registered player earns ₹10 per kill. Prizes are sent via UPI/Paytm/PhonePe/GPay within 24–48 hours after match results are verified.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item animate-on-scroll stagger-3">
+          <div class="accordion-header">
+            <h4>📱 Can I play on an emulator?</h4>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-body">
+            <p>No. Only real mobile devices are allowed. Using emulators (Gameloop, BlueStacks, LDPlayer, etc.) will result in immediate disqualification and a permanent ban. No refund will be provided.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item animate-on-scroll stagger-4">
+          <div class="accordion-header">
+            <h4>🔄 Can I get a refund?</h4>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-body">
+            <p>Refunds are only provided if a tournament is cancelled by GULLYESPORTS. Entry fees for disqualified players are non-refundable. All admin decisions on disputes are final.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item animate-on-scroll stagger-5">
+          <div class="accordion-header">
+            <h4>🛡️ How is fair play ensured?</h4>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-body">
+            <p>We verify all match results using official in-game statistics. Screen recordings may be requested for dispute resolution. Any form of cheating, hacking, or use of third-party tools leads to immediate disqualification and a permanent ban.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FINAL CTA ═══════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="register-cta animate-on-scroll glow-pulse" style="max-width:700px;margin:0 auto;">
+        <h2>Ready to <span class="gradient-text">Compete</span>?</h2>
+        <p style="font-size:var(--text-lg);">Join hundreds of players in weekly tournaments. Entry starts at just ₹5.</p>
+        <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+          <a href="/pubg.html#solo" class="btn btn-primary btn-lg">🎯 PUBG Tournaments</a>
+          <a href="/freefire.html#solo" class="btn btn-secondary btn-lg">🔥 Free Fire</a>
+          <a href="/cod.html#solo" class="btn btn-secondary btn-lg">⚔️ Call of Duty</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="navbar-brand">GULLY<span class="brand-accent">ESPORTS</span></a>
+          <p>India's premier mobile esports tournament platform. Fair play, real prizes, instant payouts.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="#" aria-label="Discord">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Games</h4>
+          <div class="footer-links">
+            <a href="/pubg.html">PUBG (BGMI)</a>
+            <a href="/freefire.html">Free Fire</a>
+            <a href="/cod.html">Call of Duty</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Modes</h4>
+          <div class="footer-links">
+            <a href="/pubg.html#solo">Solo</a>
+            <a href="/pubg.html#duo">Duo</a>
+            <a href="/pubg.html#squad">Squad</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <div class="footer-links">
+            <a href="/contact.html">Contact Us</a>
+            <a href="mailto:ishukriitpatna@gmail.com">Email</a>
+            <a href="#faq">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GULLYESPORTS. All rights reserved.</p>
+        <p>Made with ❤️ for Indian Gamers</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
