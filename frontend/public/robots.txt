@@ -1,0 +1,15 @@
+# ============================================================================
+# GULLYESPORTS — robots.txt (Production)
+# ============================================================================
+# Purpose: Controls search engine crawler access.
+# Allows all bots full access to public pages.
+# Blocks admin panel from indexing.
+# Declares sitemap location for automatic discovery.
+# ============================================================================
+
+User-agent: *
+Allow: /
+Disallow: /admin.html
+
+# Sitemap declaration for search engine discovery
+Sitemap: https://www.gullyesports.site/sitemap.xml

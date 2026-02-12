@@ -26,20 +26,287 @@
   ============================================================================
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GULLYESPORTS — India's Premier Mobile Esports Tournament Platform</title>
-  <meta name="description" content="Join weekly PUBG, Free Fire & Call of Duty Mobile tournaments. Entry from ₹5, win up to ₹500 + ₹10 per kill. Fair play, instant UPI payouts. India's most trusted esports platform." />
-  <meta name="keywords" content="esports, PUBG tournament, Free Fire tournament, BGMI tournament, Call of Duty Mobile, Indian gaming, mobile esports, online tournament" />
-  <meta property="og:title" content="GULLYESPORTS — India's Premier Mobile Esports Platform" />
-  <meta property="og:description" content="Weekly tournaments for PUBG, Free Fire & COD Mobile. Entry from ₹5, win up to ₹500." />
+
+  <!-- ═══ PRIMARY SEO META ═══ -->
+  <title>GULLYESPORTS | BGMI, Free Fire & COD Mobile Tournaments India</title>
+  <meta name="description" content="Join weekly BGMI, Free Fire and Call of Duty Mobile tournaments with ₹5 entry fee. Win real cash prizes up to ₹500 + ₹10 per kill. India's most trusted competitive esports platform with instant UPI payouts." />
+  <meta name="keywords" content="Gully Esports, GULLYESPORTS, BGMI tournament India, Free Fire online tournament, Call of Duty mobile tournament, ₹5 entry BGMI tournament, BGMI solo cash match India, online gaming tournament platform India, esports India, mobile esports, PUBG tournament" />
+  <meta name="author" content="GULLYESPORTS" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.gullyesports.site/" />
+
+  <!-- ═══ OPEN GRAPH (FACEBOOK / LINKEDIN) ═══ -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GULLYESPORTS" />
+  <meta property="og:title" content="GULLYESPORTS | BGMI, Free Fire & COD Mobile Tournaments India" />
+  <meta property="og:description" content="Join weekly BGMI, Free Fire and Call of Duty Mobile tournaments. Entry from ₹5, win up to ₹500 + ₹10/kill. Fair play, instant UPI payouts." />
+  <meta property="og:url" content="https://www.gullyesports.site/" />
+  <meta property="og:image" content="https://www.gullyesports.site/favicon.svg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GULLYESPORTS | BGMI, Free Fire & COD Mobile Tournaments" />
+  <meta name="twitter:description" content="Weekly esports tournaments for BGMI, Free Fire & COD Mobile. Entry ₹5, win ₹500+. India's trusted platform." />
+  <meta name="twitter:image" content="https://www.gullyesports.site/favicon.svg" />
+
+  <!-- ═══ MOBILE & BRANDING ═══ -->
+  <meta name="theme-color" content="#6c5ce7" />
+  <meta name="apple-mobile-web-app-title" content="GULLYESPORTS" />
+  <meta name="application-name" content="GULLYESPORTS" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- ═══ GEO TARGETING ═══ -->
+  <meta name="geo.region" content="IN-BR" />
+  <meta name="geo.placename" content="Patna, Bihar, India" />
+  <meta http-equiv="content-language" content="en-IN" />
+
+  <!-- ═══ PERFORMANCE: FONT LOADING ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" /></noscript>
+
+  <!-- ═══ STYLESHEETS ═══ -->
   <link rel="stylesheet" href="/css/design-system.css" />
   <link rel="stylesheet" href="/css/components.css" />
   <link rel="stylesheet" href="/css/pages.css" />
+
+  <!-- ═══ SERVICE WORKER REGISTRATION ═══ -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  </script>
+
+  <!-- ═══ JSON-LD STRUCTURED DATA ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.gullyesports.site/#organization",
+        "name": "GULLYESPORTS",
+        "alternateName": "Gully Esports",
+        "url": "https://www.gullyesports.site/",
+        "logo": "https://www.gullyesports.site/favicon.svg",
+        "description": "India's premier mobile esports tournament platform offering weekly BGMI, Free Fire, and Call of Duty Mobile tournaments with real cash prizes.",
+        "foundingDate": "2026",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "ishukriitpatna@gmail.com",
+          "contactType": "customer support",
+          "areaServed": "IN",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Patna",
+          "addressRegion": "Bihar",
+          "addressCountry": "IN"
+        },
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.gullyesports.site/#website",
+        "url": "https://www.gullyesports.site/",
+        "name": "GULLYESPORTS",
+        "description": "India's competitive esports tournament platform",
+        "publisher": { "@id": "https://www.gullyesports.site/#organization" },
+        "inLanguage": "en-IN",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.gullyesports.site/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.gullyesports.site/#webpage",
+        "url": "https://www.gullyesports.site/",
+        "name": "GULLYESPORTS | BGMI, Free Fire & COD Mobile Tournaments India",
+        "isPartOf": { "@id": "https://www.gullyesports.site/#website" },
+        "about": { "@id": "https://www.gullyesports.site/#organization" },
+        "description": "Join weekly BGMI, Free Fire and Call of Duty Mobile tournaments with ₹5 entry fee. Win real cash prizes.",
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.gullyesports.site/#localbusiness",
+        "name": "GULLYESPORTS",
+        "description": "India's premier mobile esports tournament platform offering weekly BGMI, Free Fire, and Call of Duty Mobile tournaments with real cash prizes.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Patna",
+          "addressLocality": "Patna",
+          "addressRegion": "Bihar",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-8298336063",
+        "email": "ishukriitpatna@gmail.com",
+        "url": "https://www.gullyesports.site/",
+        "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+        "priceRange": "$$",
+        "areaServed": "IN",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.5941,
+          "longitude": 85.1376
+        },
+        "foundingDate": "2026",
+        "founder": {
+          "@type": "Person",
+          "name": "Ishu Kumar"
+        }
+      },
+      {
+        "@type": "Event",
+        "name": "Weekly BGMI Tournaments",
+        "description": "Weekly BGMI tournaments with ₹5 entry fee, ₹500 prize for winner, ₹250 for runner-up, and ₹10 per kill.",
+        "startDate": "2026-01-01T00:00:00+05:30",
+        "endDate": "2026-12-31T23:59:59+05:30",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+          "@type": "VirtualLocation",
+          "url": "https://www.gullyesports.site/pubg"
+        },
+        "offers": {
+          "@type": "Offer",
+          "name": "BGMI Tournament Entry",
+          "price": "5",
+          "priceCurrency": "INR",
+          "url": "https://www.gullyesports.site/pubg",
+          "availability": "https://schema.org/InStock"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS",
+          "url": "https://www.gullyesports.site/"
+        },
+        "performer": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS",
+          "url": "https://www.gullyesports.site/"
+        }
+      },
+      {
+        "@type": "Event",
+        "name": "Weekly Free Fire Tournaments",
+        "description": "Weekly Free Fire tournaments with ₹5 entry fee, ₹500 prize for winner, ₹250 for runner-up, and ₹10 per kill.",
+        "startDate": "2026-01-01T00:00:00+05:30",
+        "endDate": "2026-12-31T23:59:59+05:30",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+          "@type": "VirtualLocation",
+          "url": "https://www.gullyesports.site/freefire"
+        },
+        "offers": {
+          "@type": "Offer",
+          "name": "Free Fire Tournament Entry",
+          "price": "5",
+          "priceCurrency": "INR",
+          "url": "https://www.gullyesports.site/freefire",
+          "availability": "https://schema.org/InStock"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS",
+          "url": "https://www.gullyesports.site/"
+        },
+        "performer": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS",
+          "url": "https://www.gullyesports.site/"
+        }
+      },
+      {
+        "@type": "Review",
+        "@id": "https://www.gullyesports.site/#review",
+        "reviewBody": "GULLYESPORTS is the best platform for mobile esports tournaments in India. The ₹5 entry fee is affordable and the ₹500 prize pool is amazing!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Satisfied Player"
+        },
+        "datePublished": "2026-01-15",
+        "itemReviewed": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I register for a tournament?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Go to the game page (PUBG, Free Fire, or COD), select your mode (Solo/Duo/Squad), and click Register. Fill in your in-game details, pay the entry fee via UPI, enter the transaction ID, and you're in! You'll receive match details before the tournament."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are prizes distributed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Winner gets ₹500, Runner-up gets ₹250, and every registered player earns ₹10 per kill. Prizes are sent via UPI/Paytm/PhonePe/GPay within 24–48 hours after match results are verified."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I play on an emulator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Only real mobile devices are allowed. Using emulators (Gameloop, BlueStacks, LDPlayer, etc.) will result in immediate disqualification and a permanent ban. No refund will be provided."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get a refund?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Refunds are only provided if a tournament is cancelled by GULLYESPORTS. Entry fees for disqualified players are non-refundable. All admin decisions on disputes are final."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is fair play ensured?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We verify all match results using official in-game statistics. Screen recordings may be requested for dispute resolution. Any form of cheating, hacking, or use of third-party tools leads to immediate disqualification and a permanent ban."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -54,6 +321,7 @@
         <a href="/pubg.html" class="nav-link">PUBG</a>
         <a href="/freefire.html" class="nav-link">Free Fire</a>
         <a href="/cod.html" class="nav-link">Call of Duty</a>
+        <a href="/about.html" class="nav-link">About</a>
         <a href="/contact.html" class="nav-link">Contact</a>
         <div class="nav-cta"><a href="/pubg.html#solo" class="btn btn-primary btn-sm">Join Tournament</a></div>
       </div>
@@ -62,6 +330,7 @@
   </nav>
   <div class="mobile-overlay" id="mobileOverlay"></div>
 
+  <main>
   <!-- ═══════════════════ HERO SECTION ═══════════════════ -->
   <section class="hero" id="hero">
     <div class="hero-bg">
@@ -372,6 +641,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
   <footer class="footer">
     <div class="container">
@@ -413,6 +684,7 @@
         <div>
           <h4 class="footer-heading">Support</h4>
           <div class="footer-links">
+            <a href="/about.html">About Us</a>
             <a href="/contact.html">Contact Us</a>
             <a href="mailto:ishukriitpatna@gmail.com">Email</a>
             <a href="#faq">FAQ</a>

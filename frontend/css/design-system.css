@@ -15,8 +15,10 @@
  * ============================================================================
  */
 
-/* ── Google Fonts Import ─────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+/* ── Google Fonts ────────────────────────────────────────────────────── */
+/* REMOVED: @import url() was render-blocking. Fonts are now loaded via
+   <link rel="preload"> and <link rel="stylesheet"> in HTML <head> for
+   significantly faster LCP (Largest Contentful Paint). See each HTML file. */
 
 /* ── Root Design Tokens ──────────────────────────────────────────────── */
 :root {

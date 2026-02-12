@@ -16,16 +16,204 @@
   ============================================================================
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PUBG (BGMI) Tournaments — GULLYESPORTS</title>
-  <meta name="description" content="Join weekly PUBG Mobile / BGMI tournaments. Solo, Duo, Squad modes. Entry ₹5, win up to ₹500 + ₹10/kill. Fair play, real prizes." />
+
+  <!-- ═══ PRIMARY SEO META ═══ -->
+  <title>BGMI / PUBG Mobile Tournament ₹5 Entry | GULLYESPORTS</title>
+  <meta name="description" content="Join weekly PUBG Mobile (BGMI) tournaments on GULLYESPORTS. Solo ₹5, Duo ₹10, Squad ₹20 entry. Win up to ₹500 + ₹10 per kill. Fair play guaranteed, instant UPI payouts. India's top esports platform." />
+  <meta name="keywords" content="BGMI tournament, PUBG Mobile tournament India, BGMI solo tournament ₹5, PUBG cash match, BGMI duo squad tournament, mobile esports India, Gully Esports PUBG" />
+  <meta name="author" content="GULLYESPORTS" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.gullyesports.site/pubg" />
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GULLYESPORTS" />
+  <meta property="og:title" content="BGMI / PUBG Mobile Tournament ₹5 Entry | GULLYESPORTS" />
+  <meta property="og:description" content="Weekly PUBG Mobile (BGMI) tournaments. Solo, Duo, Squad. Entry from ₹5, win up to ₹500 + ₹10/kill." />
+  <meta property="og:url" content="https://www.gullyesports.site/pubg" />
+  <meta property="og:image" content="https://www.gullyesports.site/favicon.svg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BGMI / PUBG Mobile Tournament ₹5 Entry | GULLYESPORTS" />
+  <meta name="twitter:description" content="Weekly BGMI tournaments. Solo ₹5, Duo ₹10, Squad ₹20. Win ₹500+. India's trusted esports platform." />
+  <meta name="twitter:image" content="https://www.gullyesports.site/favicon.svg" />
+
+  <!-- ═══ MOBILE & BRANDING ═══ -->
+  <meta name="theme-color" content="#1b2838" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- ═══ STYLESHEETS ═══ -->
   <link rel="stylesheet" href="/css/design-system.css" />
   <link rel="stylesheet" href="/css/components.css" />
   <link rel="stylesheet" href="/css/pages.css" />
+
+  <!-- ═══ SERVICE WORKER REGISTRATION ═══ -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  </script>
+
+  <!-- ═══ JSON-LD STRUCTURED DATA ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SportsEvent",
+        "@id": "https://www.gullyesports.site/pubg#event",
+        "name": "BGMI / PUBG Mobile Weekly Tournament",
+        "description": "Weekly PUBG Mobile (BGMI) tournaments with Solo, Duo, and Squad modes. Entry from ₹5, win up to ₹500 + ₹10 per kill.",
+        "url": "https://www.gullyesports.site/pubg",
+        "sport": "Esports",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": {
+          "@type": "VirtualLocation",
+          "url": "https://www.gullyesports.site/pubg"
+        },
+        "organizer": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS",
+          "url": "https://www.gullyesports.site/"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Solo Entry",
+            "price": "5",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.gullyesports.site/register?game=pubg&mode=solo"
+          },
+          {
+            "@type": "Offer",
+            "name": "Duo Entry",
+            "price": "10",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.gullyesports.site/register?game=pubg&mode=duo"
+          },
+          {
+            "@type": "Offer",
+            "name": "Squad Entry",
+            "price": "20",
+            "priceCurrency": "INR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.gullyesports.site/register?game=pubg&mode=squad"
+          }
+        ],
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.gullyesports.site/#localbusiness",
+        "name": "GULLYESPORTS",
+        "description": "India's premier mobile esports tournament platform offering weekly BGMI, Free Fire, and Call of Duty Mobile tournaments with real cash prizes.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Patna",
+          "addressLocality": "Patna",
+          "addressRegion": "Bihar",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-8298336063",
+        "email": "ishukriitpatna@gmail.com",
+        "url": "https://www.gullyesports.site/",
+        "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+        "priceRange": "$$",
+        "areaServed": "IN",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.5941,
+          "longitude": 85.1376
+        },
+        "foundingDate": "2026",
+        "founder": {
+          "@type": "Person",
+          "name": "Ishu Kumar"
+        }
+      },
+      {
+        "@type": "Review",
+        "@id": "https://www.gullyesports.site/#review",
+        "reviewBody": "GULLYESPORTS is the best platform for mobile esports tournaments in India. The ₹5 entry fee is affordable and the ₹500 prize pool is amazing!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Satisfied Player"
+        },
+        "datePublished": "2026-01-15",
+        "itemReviewed": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What are the general rules for PUBG tournaments?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Real mobile devices only — no emulators, triggers, or third-party tools. All players must join the custom room at least 5 minutes before match time. Room ID and password will be shared on WhatsApp/Telegram group. Players who fail to join on time will be disqualified with no refunds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the match rules?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "TPP (Third Person Perspective) mode only. Map: Erangel (unless announced otherwise). Results are based on official PUBG match stats. Screen recordings may be requested for dispute resolution."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the anti-cheat policy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Any form of cheating (aimbot, wallhack, ESP, etc.) results in a permanent ban. Teaming with enemies in Solo/Duo results in disqualification. Using emulators (Gameloop, BlueStacks, LDPlayer) results in a permanent ban. Abusive behavior gets a warning first, then ban."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How are payments and prizes handled?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Entry fee must be paid via UPI before registration. Unique transaction ID required — duplicates will be rejected. Prizes distributed within 24–48 hours via UPI/Paytm/PhonePe/GPay. Admin decisions on disputes, prizes, and disqualifications are final."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gullyesports.site/" },
+          { "@type": "ListItem", "position": 2, "name": "PUBG Tournaments", "item": "https://www.gullyesports.site/pubg" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -38,6 +226,7 @@
         <a href="/pubg.html" class="nav-link active">PUBG</a>
         <a href="/freefire.html" class="nav-link">Free Fire</a>
         <a href="/cod.html" class="nav-link">Call of Duty</a>
+        <a href="/about.html" class="nav-link">About</a>
         <a href="/contact.html" class="nav-link">Contact</a>
         <div class="nav-cta"><a href="#solo" class="btn btn-primary btn-sm">Register Now</a></div>
       </div>
@@ -46,6 +235,7 @@
   </nav>
   <div class="mobile-overlay" id="mobileOverlay"></div>
 
+  <main>
   <!-- ═══════════════════ PAGE HERO ═══════════════════ -->
   <section class="page-hero">
     <div class="hero-bg">
@@ -295,6 +485,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
   <footer class="footer">
@@ -330,6 +521,7 @@
           <h4 class="footer-heading">Support</h4>
           <div class="footer-links">
             <a href="/contact.html">Contact Us</a>
+            <a href="/about.html">About Us</a>
             <a href="mailto:ishukriitpatna@gmail.com">Email</a>
             <a href="/#faq">FAQ</a>
           </div>

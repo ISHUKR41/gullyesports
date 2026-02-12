@@ -1,0 +1,424 @@
+<!--
+  ============================================================================
+  GULLYESPORTS - About Us Page (Entity Building for SEO)
+  ============================================================================
+  Purpose: Establishes brand entity for Google Knowledge Panel eligibility.
+  Includes mission statement, founder info, brand values, and internal links.
+  
+  SEO Impact:
+    - Builds entity trust with Google
+    - Consistent NAP (Name, Address, Phone) information
+    - Organization schema reinforcement
+    - Internal linking hub
+  ============================================================================
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ PRIMARY SEO META ═══ -->
+  <title>About GULLYESPORTS | India's Competitive Esports Platform</title>
+  <meta name="description" content="GULLYESPORTS is India's premier mobile esports tournament platform. Learn about our mission, values, and commitment to fair play. Weekly BGMI, Free Fire & COD Mobile tournaments with real cash prizes." />
+  <meta name="keywords" content="about Gully Esports, GULLYESPORTS about, Indian esports platform, mobile gaming India, esports tournament organizer, competitive gaming India" />
+  <meta name="author" content="GULLYESPORTS" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.gullyesports.site/about" />
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GULLYESPORTS" />
+  <meta property="og:title" content="About GULLYESPORTS | India's Competitive Esports Platform" />
+  <meta property="og:description" content="Learn about GULLYESPORTS — India's trusted mobile esports platform. Our mission, values, and story." />
+  <meta property="og:url" content="https://www.gullyesports.site/about" />
+  <meta property="og:image" content="https://www.gullyesports.site/favicon.svg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About GULLYESPORTS | India's Competitive Esports Platform" />
+  <meta name="twitter:description" content="Meet GULLYESPORTS — India's trusted mobile esports platform with weekly tournaments and real prizes." />
+  <meta name="twitter:image" content="https://www.gullyesports.site/favicon.svg" />
+
+  <!-- ═══ MOBILE & BRANDING ═══ -->
+  <meta name="theme-color" content="#6c5ce7" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- ═══ STYLESHEETS ═══ -->
+  <link rel="stylesheet" href="/css/design-system.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/pages.css" />
+
+  <!-- ═══ SERVICE WORKER REGISTRATION ═══ -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  </script>
+
+  <!-- ═══ JSON-LD STRUCTURED DATA ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "@id": "https://www.gullyesports.site/about#page",
+        "name": "About GULLYESPORTS",
+        "description": "GULLYESPORTS is India's premier mobile esports tournament platform offering weekly BGMI, Free Fire, and Call of Duty Mobile tournaments.",
+        "url": "https://www.gullyesports.site/about",
+        "mainEntity": {
+          "@type": "Organization",
+          "@id": "https://www.gullyesports.site/#organization",
+          "name": "GULLYESPORTS",
+          "alternateName": "Gully Esports",
+          "url": "https://www.gullyesports.site/",
+          "logo": "https://www.gullyesports.site/favicon.svg",
+          "description": "India's premier mobile esports tournament platform offering weekly BGMI, Free Fire, and Call of Duty Mobile tournaments with real cash prizes and instant UPI payouts.",
+          "foundingDate": "2026",
+          "founder": {
+            "@type": "Person",
+            "name": "Ishu Kumar",
+            "jobTitle": "Founder & CEO"
+          },
+          "email": "ishukriitpatna@gmail.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "ishukriitpatna@gmail.com",
+            "contactType": "customer support",
+            "areaServed": "IN",
+            "availableLanguage": ["English", "Hindi"]
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Patna",
+            "addressRegion": "Bihar",
+            "addressCountry": "IN"
+          },
+          "sameAs": []
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gullyesports.site/" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.gullyesports.site/about" }
+        ]
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.gullyesports.site/#localbusiness",
+        "name": "GULLYESPORTS",
+        "description": "India's premier mobile esports tournament platform offering weekly BGMI, Free Fire, and Call of Duty Mobile tournaments with real cash prizes.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Patna",
+          "addressLocality": "Patna",
+          "addressRegion": "Bihar",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-8298336063",
+        "email": "ishukriitpatna@gmail.com",
+        "url": "https://www.gullyesports.site/",
+        "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+        "priceRange": "$$",
+        "areaServed": "IN",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.5941,
+          "longitude": 85.1376
+        },
+        "foundingDate": "2026",
+        "founder": {
+          "@type": "Person",
+          "name": "Ishu Kumar"
+        }
+      },
+      {
+        "@type": "Review",
+        "@id": "https://www.gullyesports.site/#review",
+        "reviewBody": "GULLYESPORTS is the best platform for mobile esports tournaments in India. The ₹5 entry fee is affordable and the ₹500 prize pool is amazing!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Satisfied Player"
+        },
+        "datePublished": "2026-01-15",
+        "itemReviewed": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/" class="navbar-brand">GULLY<span class="brand-accent">ESPORTS</span></a>
+      <div class="navbar-menu" id="navMenu">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/pubg.html" class="nav-link">PUBG</a>
+        <a href="/freefire.html" class="nav-link">Free Fire</a>
+        <a href="/cod.html" class="nav-link">Call of Duty</a>
+        <a href="/about.html" class="nav-link active">About</a>
+        <a href="/contact.html" class="nav-link">Contact</a>
+        <div class="nav-cta"><a href="/pubg.html#solo" class="btn btn-primary btn-sm">Join Tournament</a></div>
+      </div>
+      <button class="navbar-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <main>
+  <!-- ═══════════════════ PAGE HERO ═══════════════════ -->
+  <section class="page-hero">
+    <div class="hero-bg">
+      <div style="width:100%;height:100%;background:linear-gradient(135deg, #0f0c29 0%, #1a1a3e 40%, #24243e 100%);"></div>
+    </div>
+    <canvas class="particle-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge animate-on-scroll">🏢 Our Story</div>
+      <h1 class="hero-title animate-on-scroll stagger-1">About <span class="gradient-text">GULLYESPORTS</span></h1>
+      <p class="hero-subtitle animate-on-scroll stagger-2">
+        India's competitive mobile esports platform. Built by gamers, for gamers.
+        Fair play, real prizes, trusted community.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ MISSION ═══════════════════ -->
+  <section class="section" id="mission">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-label">Our Mission</span>
+        <h2 class="section-title">Empowering India's <span class="gradient-text">Mobile Gamers</span></h2>
+        <p class="section-subtitle" style="max-width:800px;margin:0 auto;">
+          GULLYESPORTS was founded with a simple belief: every skilled mobile gamer in India deserves a platform to compete, earn, and grow. 
+          We're not just hosting tournaments — we're building a movement that turns casual gamers into competitive esports athletes.
+        </p>
+      </div>
+
+      <div class="grid-3" style="margin-top:var(--space-10);">
+        <div class="card feature-card animate-on-scroll stagger-1">
+          <div class="feature-icon">🎯</div>
+          <h4>Accessible Competition</h4>
+          <p>Entry fees as low as ₹5 make competitive gaming accessible to every Indian gamer, regardless of economic background. We believe skill should determine success, not wallet size.</p>
+        </div>
+        <div class="card feature-card animate-on-scroll stagger-2">
+          <div class="feature-icon">💰</div>
+          <h4>Real Rewards</h4>
+          <p>Winners earn real cash prizes — up to ₹500 per tournament plus ₹10 per kill. Prizes are sent directly via UPI within 24-48 hours. No delays, no excuses, no hidden fees.</p>
+        </div>
+        <div class="card feature-card animate-on-scroll stagger-3">
+          <div class="feature-icon">🛡️</div>
+          <h4>Fair Play Always</h4>
+          <p>Zero tolerance for cheating, hacking, and emulator use. We verify all match results using official in-game statistics and may request screen recordings for dispute resolution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ BRAND VALUES ═══════════════════ -->
+  <section class="section-alt" id="values">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-label">Our Values</span>
+        <h2 class="section-title">What <span class="gradient-text">Drives Us</span></h2>
+      </div>
+
+      <div class="grid-4" style="margin-top:var(--space-10);">
+        <div class="card feature-card animate-on-scroll stagger-1">
+          <div class="feature-icon">🤝</div>
+          <h4>Transparency</h4>
+          <p>Clear rules, transparent prize structures, and honest communication. No hidden terms, no surprises.</p>
+        </div>
+        <div class="card feature-card animate-on-scroll stagger-2">
+          <div class="feature-icon">⚡</div>
+          <h4>Speed</h4>
+          <p>Fast registrations, instant room details, and quick payouts. We respect your time.</p>
+        </div>
+        <div class="card feature-card animate-on-scroll stagger-3">
+          <div class="feature-icon">🏆</div>
+          <h4>Merit</h4>
+          <p>Skill-based competition only. Mobile devices only. No emulators, no shortcuts, no pay-to-win.</p>
+        </div>
+        <div class="card feature-card animate-on-scroll stagger-4">
+          <div class="feature-icon">💬</div>
+          <h4>Community</h4>
+          <p>We're building a community of passionate gamers who push each other to be better. Your voice matters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PLATFORM STATS ═══════════════════ -->
+  <section class="section" id="stats">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-label">Platform</span>
+        <h2 class="section-title">GULLYESPORTS <span class="gradient-text">By The Numbers</span></h2>
+      </div>
+
+      <div class="grid-4" style="margin-top:var(--space-10);">
+        <div class="card animate-on-scroll stagger-1" style="text-align:center;">
+          <div style="font-size:var(--text-3xl);font-weight:800;color:var(--accent-primary);">
+            <span class="counter-value" data-count="3" data-suffix="">0</span>
+          </div>
+          <p style="color:var(--text-secondary);margin-top:var(--space-2);">Games Supported</p>
+        </div>
+        <div class="card animate-on-scroll stagger-2" style="text-align:center;">
+          <div style="font-size:var(--text-3xl);font-weight:800;color:var(--accent-primary);">
+            <span class="counter-value" data-count="3" data-suffix="">0</span>
+          </div>
+          <p style="color:var(--text-secondary);margin-top:var(--space-2);">Tournament Modes</p>
+        </div>
+        <div class="card animate-on-scroll stagger-3" style="text-align:center;">
+          <div style="font-size:var(--text-3xl);font-weight:800;color:var(--accent-primary);">₹
+            <span class="counter-value" data-count="500" data-suffix="">0</span>
+          </div>
+          <p style="color:var(--text-secondary);margin-top:var(--space-2);">Max Winner Prize</p>
+        </div>
+        <div class="card animate-on-scroll stagger-4" style="text-align:center;">
+          <div style="font-size:var(--text-3xl);font-weight:800;color:var(--accent-primary);">₹
+            <span class="counter-value" data-count="5" data-suffix="">0</span>
+          </div>
+          <p style="color:var(--text-secondary);margin-top:var(--space-2);">Min Entry Fee</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GAMES WE SUPPORT ═══════════════════ -->
+  <section class="section-alt" id="games">
+    <div class="container">
+      <div class="text-center animate-on-scroll">
+        <span class="section-label">Our Games</span>
+        <h2 class="section-title">Games We <span class="gradient-text">Support</span></h2>
+        <p class="section-subtitle">Three of India's most popular mobile games with weekly tournaments.</p>
+      </div>
+
+      <div class="grid-3" style="margin-top:var(--space-10);">
+        <a href="/pubg.html" class="game-card gradient-border animate-on-scroll stagger-1" style="text-decoration:none;">
+          <div class="game-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #1b2838, #2a475e);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:64px;">🎯</span>
+            </div>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-card-title">PUBG (BGMI)</h3>
+            <p class="game-card-desc">Battle Royale at its finest. Survive, loot, and dominate the battlegrounds.</p>
+            <span class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">View Tournaments →</span>
+          </div>
+        </a>
+
+        <a href="/freefire.html" class="game-card gradient-border animate-on-scroll stagger-2" style="text-decoration:none;">
+          <div class="game-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #2a1a0d, #5c3d2e);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:64px;">🔥</span>
+            </div>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-card-title">Free Fire</h3>
+            <p class="game-card-desc">Fast-paced Battle Royale. Quick matches, instant thrills, real rewards.</p>
+            <span class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">View Tournaments →</span>
+          </div>
+        </a>
+
+        <a href="/cod.html" class="game-card gradient-border animate-on-scroll stagger-3" style="text-decoration:none;">
+          <div class="game-card-image">
+            <div style="width:100%;height:100%;background:linear-gradient(135deg, #1a1a0d, #3d3d1a);display:flex;align-items:center;justify-content:center;">
+              <span style="font-size:64px;">⚔️</span>
+            </div>
+          </div>
+          <div class="game-card-body">
+            <h3 class="game-card-title">Call of Duty Mobile</h3>
+            <p class="game-card-desc">Tactical warfare meets mobile gaming. Precision gameplay, maximum thrill.</p>
+            <span class="btn btn-primary btn-sm" style="width:100%;justify-content:center;">View Tournaments →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CTA ═══════════════════ -->
+  <section class="section">
+    <div class="container">
+      <div class="register-cta animate-on-scroll glow-pulse" style="max-width:700px;margin:0 auto;">
+        <h2>Ready to <span class="gradient-text">Compete</span>?</h2>
+        <p style="font-size:var(--text-lg);">Join our growing community of competitive gamers. Entry starts at just ₹5.</p>
+        <div style="display:flex;gap:var(--space-4);justify-content:center;flex-wrap:wrap;">
+          <a href="/pubg.html#solo" class="btn btn-primary btn-lg">🎯 Browse Tournaments</a>
+          <a href="/contact.html" class="btn btn-secondary btn-lg">📞 Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="navbar-brand">GULLY<span class="brand-accent">ESPORTS</span></a>
+          <p>India's premier mobile esports tournament platform. Fair play, real prizes, instant payouts.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.13C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.43z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+            <a href="#" aria-label="Discord"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg></a>
+            <a href="#" aria-label="Twitter / X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Games</h4>
+          <div class="footer-links">
+            <a href="/pubg.html">PUBG (BGMI)</a>
+            <a href="/freefire.html">Free Fire</a>
+            <a href="/cod.html">Call of Duty</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Modes</h4>
+          <div class="footer-links">
+            <a href="/pubg.html#solo">Solo</a>
+            <a href="/pubg.html#duo">Duo</a>
+            <a href="/pubg.html#squad">Squad</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <div class="footer-links">
+            <a href="/about.html">About Us</a>
+            <a href="/contact.html">Contact Us</a>
+            <a href="mailto:ishukriitpatna@gmail.com">Email</a>
+            <a href="/#faq">FAQ</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 GULLYESPORTS. All rights reserved.</p>
+        <p>Made with ❤️ for Indian Gamers</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

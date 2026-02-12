@@ -7,16 +7,148 @@
   ============================================================================
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Call of Duty Mobile Tournaments — GULLYESPORTS</title>
-  <meta name="description" content="Join weekly Call of Duty Mobile tournaments. Solo, Duo, Squad modes. Entry ₹5, win up to ₹500 + ₹10/kill. India's most trusted esports platform." />
+
+  <!-- ═══ PRIMARY SEO META ═══ -->
+  <title>Call of Duty Mobile Tournament ₹5 Entry | GULLYESPORTS India</title>
+  <meta name="description" content="Join weekly Call of Duty Mobile (CODM) tournaments on GULLYESPORTS. Solo ₹5, Duo ₹10, Squad ₹20 entry. Win up to ₹500 + ₹10 per kill. Tactical warfare with real cash prizes. India's top esports platform." />
+  <meta name="keywords" content="COD Mobile tournament, Call of Duty Mobile tournament India, CODM cash match, COD tournament ₹5 entry, COD Mobile solo duo squad, mobile esports India, Gully Esports COD" />
+  <meta name="author" content="GULLYESPORTS" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.gullyesports.site/cod" />
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="GULLYESPORTS" />
+  <meta property="og:title" content="Call of Duty Mobile Tournament ₹5 Entry | GULLYESPORTS" />
+  <meta property="og:description" content="Weekly COD Mobile tournaments. Solo, Duo, Squad. Entry from ₹5, win up to ₹500 + ₹10/kill. India's trusted platform." />
+  <meta property="og:url" content="https://www.gullyesports.site/cod" />
+  <meta property="og:image" content="https://www.gullyesports.site/favicon.svg" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Call of Duty Mobile Tournament ₹5 Entry | GULLYESPORTS" />
+  <meta name="twitter:description" content="Weekly CODM tournaments. Solo ₹5, Duo ₹10, Squad ₹20. Win ₹500+. India's trusted esports platform." />
+  <meta name="twitter:image" content="https://www.gullyesports.site/favicon.svg" />
+
+  <!-- ═══ MOBILE & BRANDING ═══ -->
+  <meta name="theme-color" content="#3d3d1a" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- ═══ STYLESHEETS ═══ -->
   <link rel="stylesheet" href="/css/design-system.css" />
   <link rel="stylesheet" href="/css/components.css" />
   <link rel="stylesheet" href="/css/pages.css" />
+
+  <!-- ═══ SERVICE WORKER REGISTRATION ═══ -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then(registration => {
+            console.log('SW registered: ', registration);
+          })
+          .catch(registrationError => {
+            console.log('SW registration failed: ', registrationError);
+          });
+      });
+    }
+  </script>
+
+  <!-- ═══ JSON-LD STRUCTURED DATA ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SportsEvent",
+        "@id": "https://www.gullyesports.site/cod#event",
+        "name": "Call of Duty Mobile Weekly Tournament",
+        "description": "Weekly Call of Duty Mobile tournaments with Solo, Duo, and Squad modes. Entry from ₹5, win up to ₹500 + ₹10 per kill.",
+        "url": "https://www.gullyesports.site/cod",
+        "sport": "Esports",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+        "location": { "@type": "VirtualLocation", "url": "https://www.gullyesports.site/cod" },
+        "organizer": { "@type": "Organization", "name": "GULLYESPORTS", "url": "https://www.gullyesports.site/" },
+        "offers": [
+          { "@type": "Offer", "name": "Solo Entry", "price": "5", "priceCurrency": "INR", "availability": "https://schema.org/InStock" },
+          { "@type": "Offer", "name": "Duo Entry", "price": "10", "priceCurrency": "INR", "availability": "https://schema.org/InStock" },
+          { "@type": "Offer", "name": "Squad Entry", "price": "20", "priceCurrency": "INR", "availability": "https://schema.org/InStock" }
+        ],
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://www.gullyesports.site/#localbusiness",
+        "name": "GULLYESPORTS",
+        "description": "India's premier mobile esports tournament platform offering weekly BGMI, Free Fire, and Call of Duty Mobile tournaments with real cash prizes.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Patna",
+          "addressLocality": "Patna",
+          "addressRegion": "Bihar",
+          "addressCountry": "IN"
+        },
+        "telephone": "+91-8298336063",
+        "email": "ishukriitpatna@gmail.com",
+        "url": "https://www.gullyesports.site/",
+        "openingHours": "Mo,Tu,We,Th,Fr,Sa,Su 00:00-23:59",
+        "priceRange": "$$",
+        "areaServed": "IN",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.5941,
+          "longitude": 85.1376
+        },
+        "foundingDate": "2026",
+        "founder": {
+          "@type": "Person",
+          "name": "Ishu Kumar"
+        }
+      },
+      {
+        "@type": "Review",
+        "@id": "https://www.gullyesports.site/#review",
+        "reviewBody": "GULLYESPORTS is the best platform for mobile esports tournaments in India. The ₹5 entry fee is affordable and the ₹500 prize pool is amazing!",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Satisfied Player"
+        },
+        "datePublished": "2026-01-15",
+        "itemReviewed": {
+          "@type": "Organization",
+          "name": "GULLYESPORTS"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What are the general rules for COD Mobile tournaments?", "acceptedAnswer": { "@type": "Answer", "text": "Real mobile devices only — no emulators. Join custom room 5 mins before match. Room details shared on WhatsApp/Telegram. Late players are disqualified — no refunds." } },
+          { "@type": "Question", "name": "What are the match rules?", "acceptedAnswer": { "@type": "Answer", "text": "Battle Royale mode (Isolated map unless announced otherwise). TPP mode. Results based on official CODM match stats. Screen recordings may be requested for disputes." } },
+          { "@type": "Question", "name": "What is the anti-cheat policy?", "acceptedAnswer": { "@type": "Answer", "text": "Cheating/hacking = permanent ban. Teaming with enemies = disqualification. Emulator use = permanent ban. Abusive behavior = warning then ban." } },
+          { "@type": "Question", "name": "How are payments and prizes handled?", "acceptedAnswer": { "@type": "Answer", "text": "Pay entry fee via UPI before registering. Unique transaction ID required. Prizes within 24–48 hours via UPI/Paytm/PhonePe/GPay. Admin decisions are final." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.gullyesports.site/" },
+          { "@type": "ListItem", "position": 2, "name": "COD Mobile Tournaments", "item": "https://www.gullyesports.site/cod" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -29,6 +161,7 @@
         <a href="/pubg.html" class="nav-link">PUBG</a>
         <a href="/freefire.html" class="nav-link">Free Fire</a>
         <a href="/cod.html" class="nav-link active">Call of Duty</a>
+        <a href="/about.html" class="nav-link">About</a>
         <a href="/contact.html" class="nav-link">Contact</a>
         <div class="nav-cta"><a href="#solo" class="btn btn-primary btn-sm">Register Now</a></div>
       </div>
@@ -37,6 +170,7 @@
   </nav>
   <div class="mobile-overlay" id="mobileOverlay"></div>
 
+  <main>
   <!-- ═══════════════════ PAGE HERO ═══════════════════ -->
   <section class="page-hero">
     <div class="hero-bg">
@@ -189,6 +323,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- ═══════════════════ FOOTER ═══════════════════ -->
   <footer class="footer">
@@ -214,7 +349,7 @@
         </div>
         <div>
           <h4 class="footer-heading">Support</h4>
-          <div class="footer-links"><a href="/contact.html">Contact Us</a><a href="mailto:ishukriitpatna@gmail.com">Email</a><a href="/#faq">FAQ</a></div>
+          <div class="footer-links"><a href="/contact.html">Contact Us</a><a href="/about.html">About Us</a><a href="mailto:ishukriitpatna@gmail.com">Email</a><a href="/#faq">FAQ</a></div>
         </div>
       </div>
       <div class="footer-bottom">

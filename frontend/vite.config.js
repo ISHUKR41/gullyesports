@@ -44,6 +44,7 @@ export default defineConfig({
         pubg: resolve(__dirname, 'pubg.html'),
         freefire: resolve(__dirname, 'freefire.html'),
         cod: resolve(__dirname, 'cod.html'),
+        about: resolve(__dirname, 'about.html'),
         contact: resolve(__dirname, 'contact.html'),
         register: resolve(__dirname, 'register.html'),
         admin: resolve(__dirname, 'admin.html'),

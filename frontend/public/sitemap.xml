@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ============================================================================
+  GULLYESPORTS — sitemap.xml (Production)
+  ============================================================================
+  Purpose: Tells search engines about all indexable pages on the site.
+  
+  Each <url> entry includes:
+    - loc:        Full canonical URL of the page
+    - lastmod:    Last modification date (ISO 8601)
+    - changefreq: Expected update frequency
+    - priority:   Relative importance (0.0 to 1.0)
+  
+  Submit this sitemap in Google Search Console:
+    Indexing → Sitemaps → https://www.gullyesports.site/sitemap.xml
+  ============================================================================
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage — highest priority -->
+  <url>
+    <loc>https://www.gullyesports.site/</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- PUBG / BGMI Tournament Page -->
+  <url>
+    <loc>https://www.gullyesports.site/pubg</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Free Fire Tournament Page -->
+  <url>
+    <loc>https://www.gullyesports.site/freefire</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Call of Duty Mobile Tournament Page -->
+  <url>
+    <loc>https://www.gullyesports.site/cod</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://www.gullyesports.site/about</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://www.gullyesports.site/contact</loc>
+    <lastmod>2026-02-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Tournament Registration Page -->
+  <url>
+    <loc>https://www.gullyesports.site/register</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Blog Section -->
+  <url>
+    <loc>https://www.gullyesports.site/blog</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Posts (to be added as they are created) -->
+  <url>
+    <loc>https://www.gullyesports.site/blog/how-to-win-bgmi-solo-tournaments</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gullyesports.site/blog/free-fire-vs-bgmi-which-game-offers-better-earnings</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.gullyesports.site/blog/esports-tournaments-india-guide</loc>
+    <lastmod>2026-02-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
